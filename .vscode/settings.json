@@ -13,6 +13,25 @@
         ".bandit"
     ],
     "python.autoComplete.extraPaths": ["${workspaceFolder}/__pypackages__/3.9/lib"],
-    "python.analysis.extraPaths": ["${workspaceFolder}/__pypackages__/3.9/lib"]
+    "python.analysis.extraPaths": ["${workspaceFolder}/__pypackages__/3.9/lib"],
+    "files.exclude": {
+        "__pycache__": true,
+        "__pypackages__": true,
+        ".coverage": true,
+        ".pytest_cache": true,
+        ".repo": true,
+        ".testmondata": true,
+        ".webpack": true,
+        "**/__pycache__": true,
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.venv/**": true,
+        "coverage.xml": true,
+        "node_modules": true,
+        "out": true,
+        "pdm.lock": true
+    },
 }
 
