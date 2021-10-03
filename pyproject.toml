@@ -2,12 +2,15 @@
 reportUnknownLambdaType = false
 reportMissingTypeStubs = false
 reportUnknownMemberType = false
+exclude = ["__pypackages__"]
 
 [tool.pdm]
 [tool.pdm.dev-dependencies]
 dev = [
     "pytest~=6.2",
     "pytest-cov~=2.12",
+    "pytest-watch~=4.2",
+    "pytest-testmon~=1.2",
 ]
 [project]
 name = "MyPythonPDMFun"
@@ -18,6 +21,7 @@ authors = [
 ]
 dependencies = [
     "pyramda~=0.1",
+    "pure-python-adb<1,>=0.3.0.dev0",
 ]
 requires-python = ">=3.9"
 dynamic = ["classifiers"]
